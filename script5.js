@@ -5,26 +5,21 @@
 
 //ilośc zwycięstw, remisów i porażek wpisałam jako stałą, 
 
-//nie wiem jak zapisać funkcje obliczania tej ilości?
+const zwyciestwo = 3; //to są stałe, więc const
+const remis = 1; //to są stałe, więc const
+const porazka = 0; //to są stałe, więc const
 
-let zwyciestwo = 3; //to są stałe, więc const
-let remis = 1; //to są stałe, więc const
-let porazka = 0; //to są stałe, więc const
-let iloscZwyciestw =3; //nie tworzymy niepotrzebnie zmiennych globalnych 
-let iloscRemisow=5 ; //nie tworzymy niepotrzebnie zmiennych globalnych 
-let iloscPorazek=6; //nie tworzymy niepotrzebnie zmiennych globalnych 
-
-function ObliczPunktyDruzyny(){     //tutaj w () muszą być parametry (czyli to, co zrobiłaś w linijkach 13-15). 
+function ObliczPunktyDruzyny(let iloscZwyciestw =3, let iloscRemisow=5,let iloscPorazek=6) {    
    if (iloscZwyciestw >=0 && iloscRemisow>=0 && iloscPorazek>=0){
     let punktyZwyciestwa = iloscZwyciestw * zwyciestwo + iloscRemisow * remis + iloscPorazek * porazka;
-    return ("Punkty zwycięstwa drużyny (" + iloscZwyciestw + ","+ iloscRemisow + ","+ iloscPorazek + ") -> "+ punktyZwyciestwa); //zamiast return daj komuniukat = "Punkty..."
+    return ("Punkty zwycięstwa drużyny (" + iloscZwyciestw + ","+ iloscRemisow + ","+ iloscPorazek + ") -> "+ punktyZwyciestwa); //zamiast return daj komuniukat = "Punkty..." <-- jak dać komunikat? przez prompt? Dlaczego nie może tutaj być return?
    }else {
-       return ("podaj poprawną wartość") //zamiast return daj komuniukat = "Poaj..."
+       return ("podaj poprawną wartość") //zamiast return daj komuniukat = "Poaj..." <-- jak dać komunikat? przez prompt? Dlaczego nie może tutaj być return?
    }   
-   //a dopiero tutaj return komunikat
+   //a dopiero tutaj return komunikat - nie bardzo rozumiem dlaczego nie moze być return w linijkach wyżej, a co ma być w return na końcu?
    
 }
-console.log(ObliczPunktyDruzyny());
+console.log(ObliczPunktyDruzyny(5,6,7));
 
 //tak dodawać ilości zwycięstwa, porażnki, remisy? - Marcin: nie. Możesz to zrobić na dwa sposoby
 //sposób 1: iloscZwyciestw =2; iloscRemisow =2; iloscPorazek =2; function ObliczPunktyDruzyny(iloscZwyciestw,iloscRemisow,iloscPorazek)
