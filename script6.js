@@ -9,7 +9,7 @@ const krowa = 4;
 const swinia = 4;
 
 
-function sumaNog(let iloscKurczakow = 6, let iloscKrow = 4, let iloscSwin = 5){
+function sumaNog(iloscKurczakow = 6, iloscKrow = 4, iloscSwin = 5){
     if (iloscKurczakow>=0 && iloscKrow>=0 && iloscSwin){
         let iloscNog = iloscKurczakow * kurczak + iloscKrow * krowa+iloscSwin * swinia;
        return ("Zwierzęta ("+ iloscKurczakow + "," + iloscKrow + "," + iloscSwin+ ") -> "+ iloscNog);

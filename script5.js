@@ -9,7 +9,7 @@ const zwyciestwo = 3; //to są stałe, więc const
 const remis = 1; //to są stałe, więc const
 const porazka = 0; //to są stałe, więc const
 
-function ObliczPunktyDruzyny(let iloscZwyciestw =3, let iloscRemisow=5,let iloscPorazek=6) {    
+function ObliczPunktyDruzyny(iloscZwyciestw =3,  iloscRemisow=5, iloscPorazek=6) {    
    if (iloscZwyciestw >=0 && iloscRemisow>=0 && iloscPorazek>=0){
     let punktyZwyciestwa = iloscZwyciestw * zwyciestwo + iloscRemisow * remis + iloscPorazek * porazka;
     return ("Punkty zwycięstwa drużyny (" + iloscZwyciestw + ","+ iloscRemisow + ","+ iloscPorazek + ") -> "+ punktyZwyciestwa); //zamiast return daj komuniukat = "Punkty..." <-- jak dać komunikat? przez prompt? Dlaczego nie może tutaj być return?
