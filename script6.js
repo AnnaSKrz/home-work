@@ -9,20 +9,25 @@ const krowa = 4;
 const swinia = 4;
 
 
-function sumaNog(iloscKurczakow = 6, iloscKrow = 4, iloscSwin = 5){
+function sumaNog(iloscKurczakow =6, iloscKrow = 4, iloscSwin = 5){
     if (iloscKurczakow>=0 && iloscKrow>=0 && iloscSwin){
         let iloscNog = iloscKurczakow * kurczak + iloscKrow * krowa+iloscSwin * swinia;
-       return ("Zwierzęta ("+ iloscKurczakow + "," + iloscKrow + "," + iloscSwin+ ") -> "+ iloscNog);
+       alert ("Zwierzęta ("+ iloscKurczakow + "," + iloscKrow + "," + iloscSwin+ ") -> "+ iloscNog);
     }   
+    else {
+        prompt("podaj poprawną wartość");      
+    }
+return
 }
+
 console.log(sumaNog());
 
-iloscKurczakow -= 2;
-console.log(sumaNog());
-iloscSwin -=2;
-console.log(sumaNog());
-iloscKurczakow += 5;
-iloscSwin+=3;
-iloscKrow+= 2;
-console.log(sumaNog());
+// iloscKurczakow -= 2;
+// console.log(sumaNog());
+// iloscSwin -=2;
+// console.log(sumaNog());
+// iloscKurczakow += 5;
+// iloscSwin+=3;        
+// iloscKrow+= 2;
+// console.log(sumaNog());
 
