@@ -1,4 +1,5 @@
 # home-work
 Home Office Work
 
-zadania 4,5 i 6 do sprawdzenia 
+zadanie 7 do sprawdzenia,
+zadania 8 i 9 - nie umiem :)
