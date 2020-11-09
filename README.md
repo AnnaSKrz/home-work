@@ -2,4 +2,5 @@
 Home Office Work
 
 zadanie 7 do sprawdzenia,
-zadania 8 i 9 - nie umiem :)
+zadania 8 do sprawdzenia
+zadanie 9 - brak pojęcia :)
