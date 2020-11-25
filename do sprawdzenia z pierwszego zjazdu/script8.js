@@ -7,7 +7,7 @@ let printColor = {
     cyan : 3,
     magenta : 12,
     yellow: 100}
-
+        
     function inkLevels(printColor){
         return ("(" + printColor.cyan + "," + printColor.magenta + "," + printColor.yellow + ") -> " + Math.min(printColor["cyan"],printColor["magenta"],printColor["yellow"]));
     }
