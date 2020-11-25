@@ -1,3 +1,9 @@
+// Grupa przyjaciół postanowiła założyć tajne stowarzyszenie. Nazwa będzie pierwszą literą
+// każdego z ich imion, posortowaną w porządku alfabetycznym.
+// Utwórz funkcję, która pobiera tablicę nazw i zwraca nazwę tajnego stowarzyszenia.
+// societyName(["Adam", "Marcin", "Tomasz"]) ➞ "AMT"
+// societyName(["Miłosz", "Kasia", "Wiola", "Lena"]) ➞ "MKWL"
+
 
 const names = ["Adam", "Tomasz","Marcin"];
 const names2 = ["Miłosz","Kasia","Wiola","Lena"];
