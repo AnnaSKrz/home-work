@@ -15,9 +15,9 @@ const names2 = ["Miłosz","Kasia","Wiola","Lena"];
     arr.sort();
   for (let i = 0; i < arr.length; i++){  
     nameArray.push((arr[i].split("")));
-      firstLetters.push(nameArray[i][0]);
+    firstLetters.push(nameArray[i][0]);
   }  
-    return result = '"' + (firstLetters.join("")) + '"';
+    return result = '"['+ names2+ "]-> " + (firstLetters.join("")) + '"';
 }
 
 console.log(societyName(names2));
